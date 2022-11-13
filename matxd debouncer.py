@@ -1,11 +1,10 @@
 import json
 import threading
 import shutil
-from colorama import Fore 
 from random import choice
-from pystyle import System
 from requests import get
 import os
+from pystyle import System , Colors
 
 System.Size(140 , 40)
 System.Title("Matxd Debouncer ~ V1.5 ~ @matxd291")
@@ -34,12 +33,7 @@ x = json.loads(content)
 
 thread = x["Threads"]
 
-print(ascii.replace('█', Fore.RED+"█"+Fore.RESET))
-
-licence = input(f"[{Fore.RED}!{Fore.RESET}] Press enter for launch the script{Colors.reset} ")
-
-System.Clear()
-print(ascii.replace('█', Fore.RED+"█"+Fore.RESET))
+print(ascii.replace('█', Colors.red+"█"+Colors.reset))
 
 def Debouncer():
 
@@ -57,10 +51,10 @@ def Debouncer():
             os.makedirs("Results/" + Pays , exist_ok=True)
 
             if Fournisseur == "":
-                print(f"[{Fore.RED}-{Fore.RESET}] {t} | Invalid")
+                print(f"[{Colors.red}-{Colors.reset}] {t} | Invalid")
             else : 
 
-                print(f"[{Fore.LIGHTGREEN_EX}+{Fore.RESET}] {t} | Pays : {Pays} | Opérateur : {Fournisseur} | Timezone : {timezone}")
+                print(f"[{Colors.light_green}+{Colors.reset}] {t} | Pays : {Pays} | Opérateur : {Fournisseur} | Timezone : {timezone}")
                 with open("Results/" + Pays + f"/{Fournisseur}.txt" , 'a+') as file : 
                     file.write(t + '\n')
                     file.close()
