@@ -37,6 +37,6 @@
 <br>
 <p align="center">
   <strong>You can use my debouncer but I am not responsible for your actions and I decline all responsibility</p>
-
+<br>
   
 -----
