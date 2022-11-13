@@ -3,7 +3,7 @@ import threading
 import shutil
 from colorama import Fore 
 from random import choice
-from pystyle import *
+from pystyle import System
 from requests import get
 import os
 
