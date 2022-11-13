@@ -25,6 +25,7 @@
   
 
 ### <p align="center">❌ Default</p>
+<br>
 <p align="center">
   <strong>This debouncer use an api so it's slow compared to a debouncer that doesn't use api , it slows down your connection a little bit</p>
 
@@ -33,6 +34,7 @@
   
 
 ### <p align="center">⚠️ Disclaimer</p>
+<br>
 <p align="center">
   <strong>You can use my debouncer but I am not responsible for your actions and I decline all responsibility</p>
 
